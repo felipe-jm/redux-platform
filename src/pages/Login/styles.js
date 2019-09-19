@@ -17,7 +17,6 @@ export const LoginBox = styled.div`
   background: #008b74;
   border-radius: 8px;
   box-shadow: 0px 0px 4px #000;
-  opacity: 0.95;
 
   display: flex;
   flex-direction: column;
@@ -52,7 +51,7 @@ export const LoginBox = styled.div`
     transition: opacity 0.5s;
 
     &:hover {
-      opacity: 0.6;
+      opacity: 0.4;
     }
   }
 `;

@@ -11,7 +11,7 @@ export default function Routes() {
     <BrowserRouter>
       <Router history={history}>
         <Route path="/" exact component={Login} />
-        <Route path="/main" exact component={Main} />
+        <Route path="/main" component={Main} />
       </Router>
     </BrowserRouter>
   );
