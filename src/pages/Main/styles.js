@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  height: 100%;
+
   header {
     height: 60px;
     width: 100%;
@@ -19,8 +21,8 @@ export const Container = styled.div`
   div.main {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    justify-content: space-around;
+    height: 100%;
 
     div.video-wrapper {
       width: 800px;
@@ -28,13 +30,23 @@ export const Container = styled.div`
 
     aside {
       margin: 50px;
+      background-color: #00a9a4;
+      border-radius: 5px;
+      height: 75%;
+      width: 25%;
+      padding: 20px;
+      margin-left: 100px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        border: 2px solid #00909a;
+      }
 
       ul {
         list-style: none;
-        background-color: #00a9a4;
-        border-radius: 5px;
-        padding: 20px;
-        margin-left: 100px;
 
         li {
           font-size: 16px;
