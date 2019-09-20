@@ -1,5 +1,4 @@
 import React from 'react';
-import Plyr from 'react-plyr';
 
 import { Container } from './styles';
 

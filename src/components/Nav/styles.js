@@ -14,6 +14,11 @@ export const Container = styled.div`
         line-height: 20px;
         padding: 10px 20px;
         margin-bottom: 5px;
+
+        &:hover {
+          opacity: 0.6;
+          cursor: pointer;
+        }
       }
 
       .accordion-item-panel {
@@ -26,6 +31,11 @@ export const Container = styled.div`
 
         ul {
           list-style: none;
+
+          li:hover {
+            cursor: pointer;
+            opacity: 0.6;
+          }
         }
       }
     }

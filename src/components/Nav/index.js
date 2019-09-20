@@ -28,17 +28,14 @@ export default function Nav() {
     <Container>
       <Accordion className="accordion" allowMultipleExpanded={false}>
         {modules.map(module => (
-          <AccordionItem className="accordion-item">
-            <AccordionItemHeading
-              key={module.id}
-              className="accordion-item-heading"
-            >
+          <AccordionItem className="accordion-item" key={module.id}>
+            <AccordionItemHeading className="accordion-item-heading">
               <AccordionItemButton>{module.title}</AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel className="accordion-item-panel">
               <ul>
                 {module.lessons.map(lesson => (
-                  <li>{lesson.title}</li>
+                  <li key={lesson.id}>{lesson.title}</li>
                 ))}
               </ul>
             </AccordionItemPanel>
